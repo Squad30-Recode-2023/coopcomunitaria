@@ -4,127 +4,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home</title>
-  <link rel="stylesheet" href="./css/estilos.css">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="./css/cadastros.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-
-  <header class="container-fluid">
-    <nav class="navbar navbar-expand-lg  fixed-top bg">
-      <div id="nav-container" class="container-fluid col-11 me-auto">
-        <a class="navbar-brand" id="logotipo" href="cadastros.HTML"><img src="Img/coopcomunitaria.png" alt="logotipo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class=" collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="sobrenos.html">Quem somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <li></li>
-          </ul>
-          <form class="d-flex " id="search-form" role="search">
-            <button id="signup-btn" type="button" class="btn btn-primary"><a href="cadastros.html">Cadastrar</a></button>
-
-            <button class="btn " type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                fill="#4654A3" class="bi bi-person-circle" viewBox="0 0 16 16">
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path fill-rule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-              </svg></button>
-          </form>
-
+  <header>
+    <nav class="navbar navbar-expand-sm Navbar">
+        <div class="container-fluid">
+            <a class="navbard-brand" href="#"><img id="logotipo" src="./Img/coopcomunitaria.png" alt="Vogue Agency"></a>
+            <button class="navbar-toggler navbar-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNavbar" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse justify-content-between" id="collapseNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="sobrenos.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="servicos.html">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button id="signup-btn" type="button" class="btn btn-primary ml-2"><a href="cadastros.html">Cadastrar</a></button>
+                    <button class="btn ml-2" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#4654A3" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-      </div>
     </nav>
-  </header>
+ </header>
 
-  <main class="container" id="main-container">
-    <h1>Cadastre-se</h1>
-  
-    <div class="container">
+ <main class="container" id="main-container">
+  <h1>Cadastre-se</h1>
+
+  <div class="container">
       <form id="register-form">
-        <div class="half-box spacing">
-          <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu e-mail!">
-        </div>
-        <div class="half-box">
-          <label for="email-confirm">E-mail</label>
-          <input type="email" name="email-confirm" id="email-confirm" placeholder="Confirme seu e-mail!">
-        </div>
-        <div class="full-box">
-          <label for="name">Nome</label>
-          <input type="text" name="name" id="name" placeholder="Digite seu nome!">
-        </div>
-        <div class="full-box">
-          <label for="phone-number">Telefone</label>
-          <input type="text" name="phone-number" id="phone-number" placeholder="Digite seu telefone!">
-        </div>
-        <div class="full-box">
-          <label for="register-number">CPF/CNPJ</label>
-          <input type="text" name="register-number" id="register-number" placeholder="Digite seu CPF ou CNPJ">
-        </div>
-         <label for="">Endereço:</label>
-        <div class="container">
-          <div class="full-box">
-            <label for="zip-code">CEP</label>
-            <input type="text" name="zip-code" id="zip-code" placeholder="Digite seu CEP">
+          <div class="input-group">
+              <div class="half-box spacing">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" placeholder="Digite seu e-mail!">
+              </div>
+              <div class="half-box">
+                  <label for="email-confirm">Confirmar E-mail</label>
+                  <input type="email" name="email-confirm" id="email-confirm" placeholder="Confirme seu e-mail!">
+              </div>
           </div>
-          <div class="full-box">
-            <label for="street">Rua</label>
-            <input type="text" name="street" id="street" placeholder="Digite a rua">
-          </div>          
-          <div class="full-box">
-            <label for="adress-number">Número</label>
-            <input type="text" name="adress-number" id="adress-number" placeholder="Digite o número da residência">
+          <div class="input-group">
+              <div class="full-box">
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" placeholder="Digite seu nome!">
+              </div>
           </div>
-          <div class="full-box">
-            <label for="neighborhood">Bairro</label>
-            <input type="text" name="neighborhood" id="neighborhood" placeholder="Digite o bairro">
+          <div class="input-group">
+              <div class="half-box">
+                  <label for="phone-number">Telefone</label>
+                  <input type="text" name="phone-number" id="phone-number" placeholder="Digite seu telefone!">
+              </div>
+              <div class="half-box">
+                  <label for="register-number">CPF/CNPJ</label>
+                  <input type="text" name="register-number" id="register-number" placeholder="Digite seu CPF ou CNPJ">
+              </div>
           </div>
-          <div class="full-box">
-            <label for="city-name">CPF/CNPJ</label>
-            <input type="text" name="city-name" id="city-name" placeholder="Digite a cidade">
+          <div class="input-group">
+              <label for="">Endereço:</label>
+              <div class="full-box">
+                  <label for="zip-code">CEP</label>
+                  <input type="text" name="zip-code" id="zip-code" placeholder="Digite seu CEP">
+              </div>
+              <div class="full-box">
+                  <label for="street">Rua</label>
+                  <input type="text" name="street" id="street" placeholder="Digite a rua">
+              </div>
+              <div class="half-box">
+                  <label for="adress-number">Número</label>
+                  <input type="text" name="adress-number" id="adress-number" placeholder="Digite o número da residência">
+              </div>
+              <div class="half-box">
+                  <label for="neighborhood">Bairro</label>
+                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Digite o bairro">
+              </div>
+              <div class="half-box">
+                  <label for="city-name">Cidade</label>
+                  <input type="text" name="city-name" id="city-name" placeholder="Digite a cidade">
+              </div>
+              <div class="half-box">
+                  <label for="state-name">Estado</label>
+                  <input type="text" name="state-name" id="state-name" placeholder="Digite o Estado">
+              </div>
           </div>
-          <div class="full-box">
-            <label for="state-name">CPF/CNPJ</label>
-            <input type="text" name="state-name" id="state-name" placeholder="Digite o Estado">
+          <div class="input-group">
+              <div class="half-box spacing">
+                  <label for="password">Senha</label>
+                  <input type="password" name="password" id="password" placeholder="Digite sua senha">
+              </div>
+              <div class="half-box">
+                  <label for="password-confirm">Confirmar Senha</label>
+                  <input type="password" name="password-confirm" id="password-confirm" placeholder="Confirme sua senha">
+              </div>
           </div>
-        </div>
-        <div class="half-box spacing">
-          <label for="password">Senha</label>
-          <input type="password" name="password" id="password" placeholder="Digite sua senha">
-        </div>
-        <div class="half-box">
-          <label for="password-confirm">Senha</label>
-          <input type="password" name="password-confirm" id="password-confirm" placeholder="confirme sua senha">
-        </div>
-        <div class="full-box">
-          <input type="checkbox" name="agreement" id="agreement">
-          <label for="agreement" id="agreement-label">Li e aceito os <a href="#"> termos e condições de uso</a></label>
-        </div>
-        <div class="full-box">
-          <input type="submit"  id="-submit-btn" value="Cadastrar">
-        </div>
+          <div class="input-group">
+              <input type="checkbox" name="agreement" id="agreement">
+              <label for="agreement" id="agreement-label">Li e aceito os <a href="#"> termos e condições de uso</a></label>
+          </div>
+          <div class="input-group">
+              <input type="submit" id="submit-btn" value="Cadastrar">
+          </div>
       </form>
-    </div>
-   
-       
-  </main>
+  </div>
+</main>
+
 
   <!--Início do rodapé das páginas-->
 <footer>
